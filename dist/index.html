@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hashim</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="shortcut icon" href="/portfolio-tailwind/assets/logo-DnOmDK0Z.png" type="image/x-icon">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "PMVLB8r7_b1A7cwtr",
+      });
+    })();
+  </script>
+  <script type="module" crossorigin src="/portfolio-tailwind/assets/index-BaT9Vtrj.js"></script>
+  <link rel="stylesheet" crossorigin href="/portfolio-tailwind/assets/index-BsXDt8L0.css">
+</head>
+
+<body>
+  <div class="">
+    <!-- ============================================================= NAVBAR =========================================================== -->
+
+    <div class="navbar-outer sticky top-8 flex justify-center z-20 ">
+      <div class="navbar flex justify-between items-center border-4 border-solid w-[90%] h-[60px]">
+        <div class="nav-logo w-[25%] flex items-center justify-center ">
+          <a href="#home"><img class="h-[15%] w-[15%]" src="/portfolio-tailwind/assets/logo-DnOmDK0Z.png" alt=""></a>
+          <span class="hamburger" onclick="toggleMenu()">☰</span>
+        </div>
+        <div class="nav-items w-[40%] flex justify-evenly items-center" id="navItems">
+          <a class="no-underline text-white transform hover:-translate-y-1 duration-200" href="#about">About</a>
+          <a class="no-underline text-white transform hover:-translate-y-1 duration-200" href="#projects">Projects</a>
+          <a class="no-underline text-white transform hover:-translate-y-1 duration-200" href="#skills">Skills</a>
+          <a class="no-underline text-white transform hover:-translate-y-1 duration-200" href="#contact">Contact Me</a>
+        </div>
+        <div class="nav-icons flex justify-around w-[20%] text-2xl no-underline">
+          <!-- <a href="https://github.com/Hashimrahman" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/__hashim_.rhmn._/" target="_blank"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/hashim-rahman-870b24211/" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a> -->
+          <button class="buttonnew w-40 h-8 bg-[#ff7f50] text-[#f8f8f8] text-sm rounded-3xl">Download
+            CV</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("navItems");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+    </script>
+
+    <!-- ============================================================= HOME SECTION =========================================================== -->
+
+    <div class="home flex flex-col items-center" id="home">
+      <div class="home-inner w-[100%] h-[90vh] flex justify-around bg-black">
+        <div class="home-text text-white w-[50%] flex flex-col justify-center ml-16">
+          <h1>Hello</h1>
+          <h3>Hi, I'm Hashim</h3>
+          <h1 class="text-[70px] leading-[1.2] ">I'm A <br><span class="stack text-[#00ffff]">Fullstack</span><br>Python
+            Developer</h1>
+          <p class="mt-4">Wanna build your Dream website? <button><a class="no-underline text-white text-base"
+                href="#contact">Just Click</a></button></p>
+          <!-- <div class="nav-icons2">
+                        <a href="https://github.com/Hashimrahman" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.instagram.com/__hashim_.rhmn._/" target="_blank"><i
+                                class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/hashim-rahman-870b24211/" target="_blank"><i
+                                class='bx bxl-linkedin'></i></a>
+                    </div> -->
+        </div>
+        <div class="home-image w-[40%] flex items-center relative">
+          <img class="w-[100%] z-10 absolute transform scale-90" id="image-1" src="/portfolio-tailwind/assets/home-image-0WlVtLUG.png" alt="">
+          <img
+            class="w-[100%] z-20 absolute  transition -translate-y-4 transform  duration-1000 scale-[0.76]  hover:scale-[0.9]"
+            id="image-2" src="/portfolio-tailwind/assets/home-pic-Dk5MFgvP.png" alt="">
+        </div>
+      </div>
+
+      <div class="home-icons" id="home-icon">
+        <a class="text-white" href="https://github.com/Hashimrahman" target="_blank"><i class='bx bxl-github'></i></a>
+        <a class="text-white" href="https://www.instagram.com/__hashim_.rhmn._/" target="_blank"><i
+            class='bx bxl-instagram'></i>
+        </a>
+        <a class="text-white" href="https://www.linkedin.com/in/hashim-rahman-870b24211/" target="_blank"><i
+            class='bx bxl-linkedin'></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- ========================================================= ABOUT SECTION =============================================================== -->
+
+    <div class="about flex justify-around bg-[#2a2a2a] h-[80vh]" id="about">
+      <div class="about-image w-[40%] flex items-center ml-[2rem]">
+        <img class="w-[80%]" src="/portfolio-tailwind/assets/about-final-BelM9FxV.png" alt="">
+      </div>
+      <div class="about-text w-[50%] flex flex-col justify-center mr-[2rem] text-justify text-[#8a8a8a] leading-loose">
+        <h2 class="text-2xl leading-[1.2]">About Me</h2>
+        <div class="line w-12 h-[0.2rem] bg-[#00ffff]"></div>
+        <p>Highly motivated BTech graduate with a strong passion for web development. I leverage <span
+            class="about-span1 text-[##60EFFF] font-extrabold">React.js</span> and <span
+            class="about-span2 text-[#de8787] font-extrabold">Tailwind CSS</span> to craft
+          user-centric and visually appealing web experiences. Currently expanding my skillset by exploring
+          the world of backend development with a keen interest in Python's <span
+            class="about-span1 text-[##60EFFF] font-extrabold">Django</span> framework. Eager to contribute
+          to innovative projects and
+          collaborate with talented developers.</p>
+      </div>
+
+    </div>
+
+    <!-- =============================================================== PROJECT SECTION ========================================================= -->
+
+
+
+    <div class="projects flex flex-col items-center pt-8 pb-8 bg-black text-center text-white" id="projects">
+      <h2 class="text-3xl">Deployment Zone</h2>
+      <div class="line3 w-28 h-[0.2rem] bg-[#00ffff] mb-8"></div>
+      <div class="project-card w-[100%] flex flex-col justify-evenly">
+        <div class="project-card-row1 flex flex-wrap justify-evenly">
+          <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
+            <div
+              class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
+              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2"><img
+                  class="w-[95%] rounded" src="/portfolio-tailwind/assets/karma24-BSMeY9Sh.png" alt=""></div>
+              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
+                <h2 class="text-3xl text-[#00ff87] mb-8">KARMA 24</h2>
+                <p>Official Website of The annual national level <span class="project-span2">Tech Fest
+                    (2024)</span> of KMCT College of Engineering.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
+            <div
+              class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
+              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2"><img
+                  class="w-[95%] rounded" src="/portfolio-tailwind/assets/laetus-BGs5GnDd.png" alt=""></div>
+              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
+                <h2 class="text-3xl text-[#00ff87] mb-8">LAETUS CREATIONS</h2>
+                <p>Official Website of <span class="project-span2">Leatus Creations</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
+            <div
+              class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
+              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2"><img
+                  class="w-[95%] rounded" src="/portfolio-tailwind/assets/karma23-Ds7-LP7b.png" alt=""></div>
+              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
+                <h2 class="text-3xl text-[#00ff87] mb-8">KARMA 23</h2>
+                <p>Official Website of The annual national level <span class="project-span2">Tech Fest
+                    (2023)</span> of KMCT College of Engineering.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
+            <div
+              class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
+              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2"><img
+                  class="w-[95%] rounded" src="/portfolio-tailwind/assets/bridgeon-D9Ga9kLz.png" alt=""></div>
+              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
+                <h2 class="text-3xl text-[#00ff87] mb-8">BRIDGEON <span class="project-span1 text-base">(Clone)</span>
+                </h2>
+                <p>UI Clone of Official website of <span class="project-span2">Bridgeon Solutions</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
+            <div
+              class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
+              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2"><img
+                  class="w-[95%] rounded" src="/portfolio-tailwind/assets/stylit-CW9A3LNR.png" alt=""></div>
+              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
+                <h2 class="text-3xl text-[#00ff87] mb-8">STYLIT <span class="project-span1 text-base">(Ongoing)</span>
+                </h2>
+                <p>Complte E-Commerce website for the clothing brand <span class="project-span2">Stylit</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================================================================== SKILLS SECTION ===================================================== -->
+
+    <!-- <div class="skills" id="skills">
+      <div class="skill-heading">
+        <h2>What I'm Excelled At<h2>
+            <div class="line2"></div>
+      </div>
+      <div class="skill-grid">
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-html5'></i>
+          </div>
+          <div class="skill-decr">
+            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
+          </div>
+        </div>
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-tailwind-css'></i>
+          </div>
+          <div class="skill-decr">
+            <p>Tailwind CSS skips pre-made styles. Instead, tiny building blocks to style website directly
+              in HTML, giving flexibility and speed. </p>
+          </div>
+        </div>
+      </div>
+      <div class="skill-grid">
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-react'></i>
+          </div>
+          <div class="skill-decr">
+            <p>React.js, a free library for building websites by creating reusable UI blocks. It updates
+              efficiently, making webpages fast and dynamic. </p>
+          </div>
+        </div>
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-python'></i>
+          </div>
+          <div class="skill-decr">
+            <p>It's popular for web development (like <span class="django">Django!</span>), data science,
+              and automation thanks to its extensive libraries. </p>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="skill-grid">
+                <div class="skill-grid-inner">
+                    <div class="skill-logo">
+                        <i class='bx bxl-javascript'></i>
+                    </div>
+                    <div class="skill-decr">
+                        <p>A versatile, high-level programming language used for creating interactive web
+                            effects, dynamic content, and enhanced user experiences.</p>
+                    </div>
+                </div>
+                <div class="skill-grid-inner">
+                    <div class="skill-logo">
+                        <i class='bx bxl-python'></i>
+                    </div>
+                    <div class="skill-decr">
+                        <p>It's popular for web development (like <span class="django">Django!</span>), data science,
+                            and automation thanks to its extensive libraries. </p>
+                    </div>
+                </div>
+            </div> -->
+    <!-- </div> -->
+
+    <!-- ================================================================= CONTACT SECTION ======================================================= -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="skills" id="skills">
+      <div class="skill-heading">
+        <h2>What I'm Excelled At<h2>
+            <div class="line2"></div>
+      </div>
+      <div class="skill-grid">
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-html5'></i>
+          </div>
+          <!-- <div class="skill-decr">
+            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
+          </div> -->
+        </div> 
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-tailwind-css'></i>
+          </div>
+          <!-- <div class="skill-decr">
+            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
+          </div> -->
+        </div> 
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-python'></i>
+          </div>
+          <!-- <div class="skill-decr">
+            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
+          </div> -->
+        </div> 
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-javascript'></i>
+          </div>
+          <!-- <div class="skill-decr">
+            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
+          </div> -->
+        </div> 
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-git'></i>
+          </div>
+          <!-- <div class="skill-decr">
+            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
+          </div> -->
+        </div> 
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-bootstrap'></i>
+          </div>
+          <!-- <div class="skill-decr">
+            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
+          </div> -->
+        </div> 
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-css3'></i>
+          </div>
+          <!-- <div class="skill-decr">
+            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
+          </div> -->
+        </div> 
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-figma'></i>
+          </div>
+          <!-- <div class="skill-decr">
+            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
+          </div> -->
+        </div> 
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-firebase'></i>
+          </div>
+          <!-- <div class="skill-decr">
+            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
+          </div> -->
+        </div> 
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-postgresql'></i>
+          </div>
+          <!-- <div class="skill-decr">
+            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
+          </div> -->
+        </div> 
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-django'></i>
+          </div>
+          <!-- <div class="skill-decr">
+            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
+          </div> -->
+        </div> 
+        
+      </div>
+      
+      <!-- <div class="skill-grid">
+                <div class="skill-grid-inner">
+                    <div class="skill-logo">
+                        <i class='bx bxl-javascript'></i>
+                    </div>
+                    <div class="skill-decr">
+                        <p>A versatile, high-level programming language used for creating interactive web
+                            effects, dynamic content, and enhanced user experiences.</p>
+                    </div>
+                </div>
+                <div class="skill-grid-inner">
+                    <div class="skill-logo">
+                        <i class='bx bxl-python'></i>
+                    </div>
+                    <div class="skill-decr">
+                        <p>It's popular for web development (like <span class="django">Django!</span>), data science,
+                            and automation thanks to its extensive libraries. </p>
+                    </div>
+                </div>
+            </div> -->
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- ================================================================= CONTACT SECTION ======================================================= -->
+
+    <div class="contact" id="contact">
+      <div class="contact-motion">
+        <div class="loader">
+          <div class="cell d-0"></div>
+          <div class="cell d-1"></div>
+          <div class="cell d-2"></div>
+          <div class="cell d-1"></div>
+          <div class="cell d-2"></div>
+          <div class="cell d-2"></div>
+          <div class="cell d-3"></div>
+          <div class="cell d-3"></div>
+          <div class="cell d-4"></div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h2>Let's Talk</h2>
+        <!-- <div class="line3"></div> -->
+        <div class="form">
+          <form action="">
+            <input class="form-1" type="text" placeholder="Name" id="name1">
+            <input class="form-1" type="email" placeholder="Email" id="email">
+            <textarea class="form-message" type="text" placeholder="Message" id="message"></textarea>
+
+
+          </form>
+          <button onclick="sendMail()">Send email</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================ FOOTER SECTION ======================================================== -->
+
+    <div class="footer">
+      <!-- <div class="footer-topline"></div> -->
+      <p><i class='bx bx-copyright'></i> All Rights Reserved</p>
+    </div>
+
+    <!-- ================================================================= BACK TO TOP ======================================================= -->
+
+    <button
+      onclick="window.open('https://wa.me/919072827658?text=Hello%2C%20I%20am%20interested%20in%20your%20services.', '_blank')"
+      class="whatsApp-button">
+      <i class='bx bxl-whatsapp back'></i>
+    </button>
+    <button onclick="window.location='#home'" class="scroll-up-button"><i class='bx bx-chevron-up-circle back'></i>
+    </button>
+
+
+  </div>
+
+
+
+</body>
+
+</html>
