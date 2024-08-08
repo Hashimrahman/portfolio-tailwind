@@ -111,8 +111,8 @@ body {
         border-style: solid;
         width: 90%;
         height: 60px; */
-  /* backdrop-filter: blur(8px) ;
-    -webkit-backdrop-filter: blur(8px); */
+  backdrop-filter: blur(8px) ;
+    -webkit-backdrop-filter: blur(8px);
   /* border-radius: 4rem; */
 }
 
@@ -123,23 +123,18 @@ body {
     align-items: center;
 } */
 
-#name {
-  font-size: xx-large;
-  font-weight: bolder;
-  color: green;
-}
 
 /* .nav-logo a img {
     height: 15%;
     width: 15%;
 } */
 
-.nav-items {
+/* .nav-items {
   width: 40%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
+} */
 
 /* .nav-items a {
     text-decoration: none;
@@ -155,17 +150,14 @@ body {
   border-left: 2px solid rgb(255, 255, 255);
 } */
 
-.nav-icons a {
+/* .nav-icons a {
   color: white;
-}
+} */
 
-.nav-items a:hover {
+/* .nav-items a:hover {
   color: #c172ff;
-}
+} */
 
-.nav-icons i:hover {
-  color: #c172ff;
-}
 
 .nav-logo img:hover {
   color: #c172ff;
@@ -528,7 +520,7 @@ body {
   0% {
     width: 6rem;
   }
-  50%{
+  50% {
     width: 0rem;
   }
   100% {
@@ -702,7 +694,7 @@ body {
   0% {
     width: 10rem;
   }
-  50%{
+  50% {
     width: 0rem;
   }
   100% {
@@ -720,7 +712,7 @@ body {
 
   .card {
     margin: 4rem;
-    width: 35%; 
+    width: 35%;
     /* height: 100px; */
   }
 }
@@ -868,7 +860,7 @@ body {
   0% {
     width: 10rem;
   }
-  50%{
+  50% {
     width: 0rem;
   }
   100% {
@@ -878,7 +870,7 @@ body {
 
 /* ================================= CONTACT SECTION ======================================== */
 
-.contact {
+/* .contact {
   width: 100%;
   height: 80vh;
   display: flex;
@@ -886,24 +878,24 @@ body {
   color: white;
   padding-top: 2rem;
   margin-bottom: 2rem;
-}
+} */
 
-.contact-motion {
+/* .contact-motion {
   width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.contact-form {
+/* .contact-form {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 2rem;
-}
+} */
 
 .contact-form h2 {
   margin: 2rem 0 2rem 1rem;
@@ -924,16 +916,16 @@ textarea {
   width: 100%;
 }
 
-.form-1 {
+/* .form-1 {
   height: 3.5rem;
   border-radius: 0.8rem;
   background-color: #ffffff;
   margin: 0.5rem;
   border: 0;
   padding-left: 1rem;
-}
+} */
 
-.form-message {
+/* .form-message {
   height: 10rem;
   border-radius: 0.8rem;
   background-color: #ffffff;
@@ -941,33 +933,31 @@ textarea {
   text-align: start;
   border: 0;
   padding-left: 1rem;
-  resize: vertical;
-  font-family: "Poppins";
   resize: none;
-}
-.form-message::placeholder {
+} */
+/* .form-message::placeholder {
   line-height: 9rem;
-}
+} */
 
 .contact-form button {
-  width: 70%;
+  /* width: 70%;  
   height: 2.5rem;
   padding: 0.5rem;
-  background-color: aqua;
+  background-color: #00ffff;
   margin: 0.5rem;
   border-radius: 0.5rem;
   border: 0px;
   font-size: medium;
-  margin-top: 1rem;
+  margin-top: 1rem; */
   transition: all 2s;
 }
 
-.contact-form a {
+/* .contact-form a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   width: 100%;
-  /* background-color: #C172FF; */
-}
+  background-color: #C172FF;
+} */
 
 .contact-form button:hover {
   transform: scale(1.1);
@@ -987,8 +977,8 @@ textarea {
   --total-size: calc(
     var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing))
   );
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
   width: var(--total-size);
   height: var(--total-size);
 }
@@ -1097,30 +1087,23 @@ textarea {
 
 /* ============================ FOOTER SECTION ============================================= */
 
-.footer {
+/* .footer {
   background-color: #ffffff;
   height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(0, 0, 0);
+  color: #000000;
   font-size: small;
-}
-.footer-topline {
-  width: 100%;
-  height: 2px;
-  background-color: #ffffff;
-}
+} */
 
 /* ============================= BACK TO TOP ============================================ */
 
-.scroll-up-button {
+/* .scroll-up-button {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  /* width: 1rem;
-        height: 1rem; */
   font-size: 3rem;
   background: none;
   color: #17fba2;
@@ -1133,15 +1116,13 @@ textarea {
   position: fixed;
   right: 1rem;
   bottom: 4rem;
-  /* width: 1rem;
-        height: 1rem; */
   font-size: 3rem;
   background: none;
   color: #17fba2;
   border: 0;
   cursor: pointer;
   z-index: 2;
-}
+} */
 
 .whatsApp-button:hover,
 .scroll-up-button:hover {
