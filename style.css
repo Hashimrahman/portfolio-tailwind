@@ -112,7 +112,7 @@ body {
         width: 90%;
         height: 60px; */
   backdrop-filter: blur(8px) ;
-    -webkit-backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   /* border-radius: 4rem; */
 }
 
@@ -164,22 +164,22 @@ body {
 }
 
 /* Responsive CSS */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
   }
-}
+} */
 
 @media (max-width: 768px) {
-  .navbar {
+  /* .navbar {
     flex-direction: column;
     align-items: flex-start;
     color: white;
     height: auto;
     padding: 1rem;
-    width: auto;
+    width: auto; 
     backdrop-filter: blur(8px);
-  }
+  } */
 
   .nav-logo {
     width: 95%;
@@ -312,14 +312,14 @@ body {
     scale: 1.1;
 } */
 
-.home-text button {
+/* .home-text button {
   width: 10rem;
   height: 2rem;
-  background-color: coral;
-  color: rgb(248, 248, 248);
+  background-color: #ff7f50;
+  color: rgb(255, 255, 255);
   border-radius: 2rem;
   border: 0;
-}
+} */
 
 .buttonnew {
   /* width: 10rem;
@@ -411,7 +411,7 @@ body {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   .home-image {
     display: none;
   }

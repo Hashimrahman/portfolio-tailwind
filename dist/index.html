@@ -4,13 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hashim</title>
-
+  <title>Hashim</title>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <link rel="shortcut icon" href="/portfolio-tailwind/assets/logo-DnOmDK0Z.png" type="image/x-icon">
-  <link rel="stylesheet" href="./../style.css">
-
+  <link rel="shortcut icon" href="/portfolio-tailwind/assets/logo-DnOmDK0Z.png" type="image/x-icon">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
   <script type="text/javascript">
@@ -20,8 +17,8 @@
       });
     })();
   </script>
-  <script type="module" crossorigin src="/portfolio-tailwind/assets/index-DPSx62UB.js"></script>
-  <link rel="stylesheet" crossorigin href="/portfolio-tailwind/assets/index-Zk9P-HU-.css">
+  <script type="module" crossorigin src="/portfolio-tailwind/assets/index-CxsYntiN.js"></script>
+  <link rel="stylesheet" crossorigin href="/portfolio-tailwind/assets/index-DNKRzQv7.css">
 </head>
 
 <body>
@@ -29,10 +26,11 @@
     <!-- ============================================================= NAVBAR =========================================================== -->
 
     <div class="navbar-outer sticky top-8 flex justify-center z-20 ">
-      <div class="navbar flex justify-between items-center border-4 border-solid w-[90%] h-[60px]">
+      <div
+        class="navbar flex flex-col items-center text-white h-auto p-4 w-auto md:flex-row md:justify-between md:items-center border-4 border-solid md:w-[90%] md:h-[60px]">
         <div class="nav-logo w-[25%] flex items-center justify-center ">
           <a href="#home"><img class="h-[15%] w-[15%]" src="/portfolio-tailwind/assets/logo-DnOmDK0Z.png" alt=""></a>
-          <span class="hamburger" onclick="toggleMenu()">☰</span>
+          <span class="hamburger md:hidden" onclick="toggleMenu()">☰</span>
         </div>
         <div class="nav-items w-[40%] flex justify-evenly items-center" id="navItems">
           <a class="no-underline text-white transform hover:-translate-y-1 duration-200" href="#about">About</a>
@@ -46,7 +44,9 @@
                             class='bx bxl-instagram'></i></a>
                     <a href="https://www.linkedin.com/in/hashim-rahman-870b24211/" target="_blank"><i
                             class='bx bxl-linkedin'></i></a> -->
-          <a href="https://docs.google.com/document/d/1Rwot6RQfZfbWVWsBlSxjuPR93hOuMQ7OmTIUmqOdW9g/export?format=pdf" download="hashim.pdf"><button class="buttonnew w-40 h-8 bg-[#ff7f50] text-[#f8f8f8] text-sm rounded-3xl">Download
+          <a href="https://docs.google.com/document/d/1Rwot6RQfZfbWVWsBlSxjuPR93hOuMQ7OmTIUmqOdW9g/export?format=pdf"
+            download="hashim.pdf"><button
+              class="buttonnew w-40 h-8 bg-[#ff7f50] text-[#f8f8f8] text-sm rounded-3xl">Download
               CV</button></a>
         </div>
       </div>
@@ -66,21 +66,14 @@
     <!-- ============================================================= HOME SECTION =========================================================== -->
 
     <div class="home flex flex-col items-center" id="home">
-      <div class="home-inner w-[100%] h-[90vh] flex justify-around bg-black">
+      <div class="home-inner w-[100%] h-[90vh] flex justify-around bg-black flex-wrap">
         <div class="home-text text-white w-[50%] flex flex-col justify-center ml-16">
-          <h1>Hello</h1>
           <h3>Hi, I'm Hashim</h3>
-          <h1 class="text-[70px] leading-[1.2] ">I'm A <br><span class="stack text-[#00ffff]">Fullstack</span><br>Python
+          <h1 class="text-[70px] leading-[1.2] ">I'm A <br><span class="stack text-[#00ffff]">Python</span><br>Fullstack
             Developer</h1>
-          <p class="mt-4">Wanna build your Dream website? <button><a class="no-underline text-white text-base"
-                href="#contact">Just Click</a></button></p>
-          <!-- <div class="nav-icons2">
-                        <a href="https://github.com/Hashimrahman" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://www.instagram.com/__hashim_.rhmn._/" target="_blank"><i
-                                class='bx bxl-instagram'></i></a>
-                        <a href="https://www.linkedin.com/in/hashim-rahman-870b24211/" target="_blank"><i
-                                class='bx bxl-linkedin'></i></a>
-                    </div> -->
+          <p class="mt-4">Wanna build your Dream website? <button
+              class="w-40 h-8 bg-[#ff7f50] rounded-3xl border-none"><a
+                class="no-underline text-white text-base hover:text-black" href="#contact">Just Click</a></button></p>
         </div>
         <div class="home-image w-[40%] flex items-center relative">
           <img class="w-[100%] z-10 absolute transform scale-90" id="image-1" src="/portfolio-tailwind/assets/home-image-0WlVtLUG.png" alt="">
@@ -131,66 +124,91 @@
       <div class="line3 w-28 h-[0.2rem] bg-[#00ffff] mb-8"></div>
       <div class="project-card w-[100%] flex flex-col justify-evenly">
         <div class="project-card-row1 flex flex-wrap justify-evenly">
-          <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
-            <div
-              class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
-              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2"><img
-                  class="w-[95%] rounded" src="/portfolio-tailwind/assets/karma24-BSMeY9Sh.png" alt=""></div>
-              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
-                <h2 class="text-3xl text-[#00ff87] mb-8">KARMA 24</h2>
-                <p>Official Website of The annual national level <span class="project-span2">Tech Fest
-                    (2024)</span> of KMCT College of Engineering.</p>
+          <a href="https://karmakmct.com/">
+            <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
+              <div
+                class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
+                <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1 ">
+                  <img class="w-[95%] rounded" src="/portfolio-tailwind/assets/karma24-BSMeY9Sh.png" alt=""></div>
+                <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
+                  <h2 class="text-3xl text-[#00ff87] mb-8">KARMA 24</h2>
+                  <p>Official Website of The annual national level <span class="project-span2">Tech Fest
+                      (2024)</span> of KMCT College of Engineering.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
-            <div
-              class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
-              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2"><img
-                  class="w-[95%] rounded" src="/portfolio-tailwind/assets/laetus-BGs5GnDd.png" alt=""></div>
-              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
-                <h2 class="text-3xl text-[#00ff87] mb-8">LAETUS CREATIONS</h2>
-                <p>Official Website of <span class="project-span2">Leatus Creations</span></p>
+          </a>
+          <a href="https://github.com/laetuscreations/web">
+            <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
+              <div
+                class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
+                <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1">
+                  <img class="w-[95%] rounded" src="/portfolio-tailwind/assets/laetus-BGs5GnDd.png" alt=""></div>
+                <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
+                  <h2 class="text-3xl text-[#00ff87] mb-8">LAETUS CREATIONS</h2>
+                  <p>Official Website of <span class="project-span2">Leatus Creations</span></p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
-            <div
-              class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
-              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2"><img
-                  class="w-[95%] rounded" src="/portfolio-tailwind/assets/karma23-Ds7-LP7b.png" alt=""></div>
-              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
-                <h2 class="text-3xl text-[#00ff87] mb-8">KARMA 23</h2>
-                <p>Official Website of The annual national level <span class="project-span2">Tech Fest
-                    (2023)</span> of KMCT College of Engineering.</p>
+          </a>
+          <a href="">
+            <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
+              <div
+                class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
+                <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1">
+                  <img class="w-[95%] rounded" src="/portfolio-tailwind/assets/karma23-Ds7-LP7b.png" alt=""></div>
+                <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
+                  <h2 class="text-3xl text-[#00ff87] mb-8">KARMA 23</h2>
+                  <p>Official Website of The annual national level <span class="project-span2">Tech Fest
+                      (2023)</span> of KMCT College of Engineering.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
-            <div
-              class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
-              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2"><img
-                  class="w-[95%] rounded" src="/portfolio-tailwind/assets/bridgeon-D9Ga9kLz.png" alt=""></div>
-              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
-                <h2 class="text-3xl text-[#00ff87] mb-8">BRIDGEON <span class="project-span1 text-base">(Clone)</span>
-                </h2>
-                <p>UI Clone of Official website of <span class="project-span2">Bridgeon Solutions</span>
-                </p>
+          </a>
+          <a href="https://github.com/Hashimrahman/bridgeon">
+            <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
+              <div
+                class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
+                <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1">
+                  <img class="w-[95%] rounded" src="/portfolio-tailwind/assets/bridgeon-D9Ga9kLz.png" alt=""></div>
+                <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
+                  <h2 class="text-3xl text-[#00ff87] mb-8">BRIDGEON <span class="project-span1 text-base">(Clone)</span>
+                  </h2>
+                  <p>UI Clone of Official website of <span class="project-span2">Bridgeon Solutions</span>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
-            <div
-              class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
-              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2"><img
-                  class="w-[95%] rounded" src="/portfolio-tailwind/assets/stylit-CW9A3LNR.png" alt=""></div>
-              <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
-                <h2 class="text-3xl text-[#00ff87] mb-8">STYLIT <span class="project-span1 text-base">(Ongoing)</span>
-                </h2>
-                <p>Complte E-Commerce website for the clothing brand <span class="project-span2">Stylit</span></p>
+          </a>
+          <a href="https://github.com/Hashimrahman/Airbnb-clone">
+            <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
+              <div
+                class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
+                <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1">
+                  <img class="w-[95%] rounded" src="/portfolio-tailwind/assets/airbnb-JisH9O2E.png" alt=""></div>
+                <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
+                  <h2 class="text-3xl text-[#00ff87] mb-8">AIRBNB <span class="project-span1 text-base">(Clone)</span>
+                  </h2>
+                  <p>UI Clone of Official website of <span class="project-span2">Airbnb</span>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
+          <a href="https://hashimrahman.github.io/stylit/">
+            <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
+              <div
+                class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
+                <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1">
+                  <img class="w-[95%] rounded" src="/portfolio-tailwind/assets/stylit-CW9A3LNR.png" alt=""></div>
+                <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
+                  <h2 class="text-3xl text-[#00ff87] mb-8">STYLIT <span class="project-span1 text-base">(Ongoing)</span>
+                  </h2>
+                  <p>Complte E-Commerce website for the clothing brand <span class="project-span2">Stylit</span></p>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -263,27 +281,7 @@
             </div> -->
     <!-- </div> -->
 
-    <!-- ================================================================= CONTACT SECTION ======================================================= -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- ================================================================= SKILLS - UPDATED SECTION ======================================================= -->
 
 
 
@@ -300,89 +298,61 @@
           <div class="skill-logo">
             <i class='bx bxl-html5'></i>
           </div>
-          <!-- <div class="skill-decr">
-            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
-          </div> -->
         </div>
         <div class="skill-grid-inner">
           <div class="skill-logo">
             <i class='bx bxl-tailwind-css'></i>
           </div>
-          <!-- <div class="skill-decr">
-            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
-          </div> -->
         </div>
         <div class="skill-grid-inner">
           <div class="skill-logo">
             <i class='bx bxl-python'></i>
           </div>
-          <!-- <div class="skill-decr">
-            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
-          </div> -->
         </div>
         <div class="skill-grid-inner">
           <div class="skill-logo">
             <i class='bx bxl-javascript'></i>
           </div>
-          <!-- <div class="skill-decr">
-            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
-          </div> -->
         </div>
         <div class="skill-grid-inner">
           <div class="skill-logo">
             <i class='bx bxl-git'></i>
           </div>
-          <!-- <div class="skill-decr">
-            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
-          </div> -->
         </div>
         <div class="skill-grid-inner">
           <div class="skill-logo">
             <i class='bx bxl-bootstrap'></i>
           </div>
-          <!-- <div class="skill-decr">
-            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
-          </div> -->
         </div>
         <div class="skill-grid-inner">
           <div class="skill-logo">
             <i class='bx bxl-css3'></i>
           </div>
-          <!-- <div class="skill-decr">
-            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
-          </div> -->
         </div>
         <div class="skill-grid-inner">
           <div class="skill-logo">
             <i class='bx bxl-figma'></i>
           </div>
-          <!-- <div class="skill-decr">
-            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
-          </div> -->
         </div>
         <div class="skill-grid-inner">
           <div class="skill-logo">
             <i class='bx bxl-firebase'></i>
           </div>
-          <!-- <div class="skill-decr">
-            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
-          </div> -->
         </div>
         <div class="skill-grid-inner">
           <div class="skill-logo">
             <i class='bx bxl-postgresql'></i>
           </div>
-          <!-- <div class="skill-decr">
-            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
-          </div> -->
         </div>
         <div class="skill-grid-inner">
           <div class="skill-logo">
             <i class='bx bxl-django'></i>
           </div>
-          <!-- <div class="skill-decr">
-            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
-          </div> -->
+        </div>
+        <div class="skill-grid-inner">
+          <div class="skill-logo">
+            <i class='bx bxl-react'></i>
+          </div>
         </div>
 
       </div>
@@ -489,8 +459,7 @@
 
   </div>
 
-
-
+
 
 </body>
 
