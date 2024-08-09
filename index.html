@@ -9,7 +9,11 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-  <script type="module" src="index.js"></script>
+  
+  <script type="module">
+    import { sendMail } from './index.js';
+    document.getElementById('send-mail').onclick = sendMail;
+  </script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
   <script type="text/javascript">
@@ -18,6 +22,7 @@
         publicKey: "PMVLB8r7_b1A7cwtr",
       });
     })();
+
   </script>
 </head>
 
@@ -124,12 +129,13 @@
       <div class="line3 w-28 h-[0.2rem] bg-[#00ffff] mb-8"></div>
       <div class="project-card w-[100%] flex flex-col justify-evenly">
         <div class="project-card-row1 flex flex-wrap justify-evenly">
-          <a href="https://karmakmct.com/">
+          <a href="https://karmakmct.com/" class="flex justify-center">
             <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
               <div
                 class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1 ">
-                  <img class="w-[95%] rounded" src="./images/karma24.png" alt=""></div>
+                  <img class="w-[95%] rounded mt-8 sm:mt-0" src="./images/karma24.png" alt="">
+                </div>
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
                   <h2 class="text-3xl text-[#00ff87] mb-8">KARMA 24</h2>
                   <p>Official Website of The annual national level <span class="project-span2">Tech Fest
@@ -138,12 +144,13 @@
               </div>
             </div>
           </a>
-          <a href="https://github.com/laetuscreations/web">
+          <a href="https://github.com/laetuscreations/web" class="flex justify-center">
             <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
               <div
                 class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1">
-                  <img class="w-[95%] rounded" src="./images/laetus.png" alt=""></div>
+                  <img class="w-[95%] rounded mt-8 sm:mt-0" src="./images/laetus.png" alt="">
+                </div>
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
                   <h2 class="text-3xl text-[#00ff87] mb-8">LAETUS CREATIONS</h2>
                   <p>Official Website of <span class="project-span2">Leatus Creations</span></p>
@@ -151,12 +158,13 @@
               </div>
             </div>
           </a>
-          <a href="">
+          <a href="" class="flex justify-center">
             <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
               <div
                 class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1">
-                  <img class="w-[95%] rounded" src="./images/karma23.png" alt=""></div>
+                  <img class="w-[95%] rounded mt-8 sm:mt-0" src="./images/karma23.png" alt="">
+                </div>
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
                   <h2 class="text-3xl text-[#00ff87] mb-8">KARMA 23</h2>
                   <p>Official Website of The annual national level <span class="project-span2">Tech Fest
@@ -165,12 +173,13 @@
               </div>
             </div>
           </a>
-          <a href="https://github.com/Hashimrahman/bridgeon">
+          <a href="https://github.com/Hashimrahman/bridgeon" class="flex justify-center">
             <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
               <div
                 class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1">
-                  <img class="w-[95%] rounded" src="./images/bridgeon.png" alt=""></div>
+                  <img class="w-[95%] rounded mt-8 sm:mt-0" src="./images/bridgeon.png" alt="">
+                </div>
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
                   <h2 class="text-3xl text-[#00ff87] mb-8">BRIDGEON <span class="project-span1 text-base">(Clone)</span>
                   </h2>
@@ -180,12 +189,13 @@
               </div>
             </div>
           </a>
-          <a href="https://github.com/Hashimrahman/Airbnb-clone">
+          <a href="https://github.com/Hashimrahman/Airbnb-clone" class="flex justify-center">
             <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
               <div
                 class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1">
-                  <img class="w-[95%] rounded" src="./images/airbnb.png" alt=""></div>
+                  <img class="w-[95%] rounded mt-8 sm:mt-0" src="./images/airbnb.png" alt="">
+                </div>
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
                   <h2 class="text-3xl text-[#00ff87] mb-8">AIRBNB <span class="project-span1 text-base">(Clone)</span>
                   </h2>
@@ -195,12 +205,13 @@
               </div>
             </div>
           </a>
-          <a href="https://hashimrahman.github.io/stylit/">
+          <a href="https://hashimrahman.github.io/stylit/" class="flex justify-center">
             <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
               <div
                 class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1">
-                  <img class="w-[95%] rounded" src="./images/stylit.png" alt=""></div>
+                  <img class="w-[95%] rounded mt-8 sm:mt-0" src="./images/stylit.png" alt="">
+                </div>
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
                   <h2 class="text-3xl text-[#00ff87] mb-8">STYLIT <span class="project-span1 text-base">(Ongoing)</span>
                   </h2>
@@ -215,77 +226,7 @@
 
     <!-- =================================================================== SKILLS SECTION ===================================================== -->
 
-    <!-- <div class="skills" id="skills">
-      <div class="skill-heading">
-        <h2>What I'm Excelled At<h2>
-            <div class="line2"></div>
-      </div>
-      <div class="skill-grid">
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
-            <i class='bx bxl-html5'></i>
-          </div>
-          <div class="skill-decr">
-            <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
-          </div>
-        </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
-            <i class='bx bxl-tailwind-css'></i>
-          </div>
-          <div class="skill-decr">
-            <p>Tailwind CSS skips pre-made styles. Instead, tiny building blocks to style website directly
-              in HTML, giving flexibility and speed. </p>
-          </div>
-        </div>
-      </div>
-      <div class="skill-grid">
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
-            <i class='bx bxl-react'></i>
-          </div>
-          <div class="skill-decr">
-            <p>React.js, a free library for building websites by creating reusable UI blocks. It updates
-              efficiently, making webpages fast and dynamic. </p>
-          </div>
-        </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
-            <i class='bx bxl-python'></i>
-          </div>
-          <div class="skill-decr">
-            <p>It's popular for web development (like <span class="django">Django!</span>), data science,
-              and automation thanks to its extensive libraries. </p>
-          </div>
-        </div>
-      </div> -->
-    <!-- <div class="skill-grid">
-                <div class="skill-grid-inner">
-                    <div class="skill-logo">
-                        <i class='bx bxl-javascript'></i>
-                    </div>
-                    <div class="skill-decr">
-                        <p>A versatile, high-level programming language used for creating interactive web
-                            effects, dynamic content, and enhanced user experiences.</p>
-                    </div>
-                </div>
-                <div class="skill-grid-inner">
-                    <div class="skill-logo">
-                        <i class='bx bxl-python'></i>
-                    </div>
-                    <div class="skill-decr">
-                        <p>It's popular for web development (like <span class="django">Django!</span>), data science,
-                            and automation thanks to its extensive libraries. </p>
-                    </div>
-                </div>
-            </div> -->
-    <!-- </div> -->
-
     <!-- ================================================================= SKILLS - UPDATED SECTION ======================================================= -->
-
-
-
-
 
 
     <div class="skills" id="skills">
@@ -354,52 +295,8 @@
             <i class='bx bxl-react'></i>
           </div>
         </div>
-
       </div>
-
-      <!-- <div class="skill-grid">
-                <div class="skill-grid-inner">
-                    <div class="skill-logo">
-                        <i class='bx bxl-javascript'></i>
-                    </div>
-                    <div class="skill-decr">
-                        <p>A versatile, high-level programming language used for creating interactive web
-                            effects, dynamic content, and enhanced user experiences.</p>
-                    </div>
-                </div>
-                <div class="skill-grid-inner">
-                    <div class="skill-logo">
-                        <i class='bx bxl-python'></i>
-                    </div>
-                    <div class="skill-decr">
-                        <p>It's popular for web development (like <span class="django">Django!</span>), data science,
-                            and automation thanks to its extensive libraries. </p>
-                    </div>
-                </div>
-            </div> -->
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- ================================================================= CONTACT SECTION ======================================================= -->
 
@@ -419,7 +316,6 @@
       </div>
       <div class="contact-form w-1/2 h-full flex flex-col items-start pt-8">
         <h2 class="my-8 ml-4 text-5xl">Let's Talk</h2>
-        <!-- <div class="line3"></div> -->
         <div class="form">
           <form action="">
             <input class="form-1 w-full h-14 rounded-xl bg-white m-2 border-none pl-4" type="text" placeholder="Name"
@@ -432,8 +328,7 @@
 
 
           </form>
-          <button class="w-3/5 h-10 p-2 bg-[#00ffff] m-2 rounded-lg border-none text-base mt-4"
-            onclick="sendMail()">Send email</button>
+          <button class="w-3/5 h-10 p-2 bg-[#00ffff] m-2 rounded-lg border-none text-base mt-4" id="send-mail">Send email</button>
         </div>
       </div>
     </div>
@@ -448,20 +343,14 @@
 
     <button
       onclick="window.open('https://wa.me/919072827658?text=Hello%2C%20I%20am%20interested%20in%20your%20services.', '_blank')"
-      class="whatsApp-button fixed right-4 bottom-16 text-5xl bg-none text-[#17fba2] border-none cursor-pointer z-20">
+      class="whatsApp-button fixed right-4 bottom-16 text-5xl bg-none text-[#17fba2] border-none cursor-pointer z-20" >
       <i class='bx bxl-whatsapp back'></i>
     </button>
     <button onclick="window.location='#home'"
       class="scroll-up-button fixed right-4 bottom-4 text-5xl bg-none text-[#17fba2] border-none cursor-pointer z-20"><i
         class='bx bx-chevron-up-circle back'></i>
     </button>
-
-
   </div>
-
-
   <script type="module" src="./main.js"></script>
-
 </body>
-
 </html>

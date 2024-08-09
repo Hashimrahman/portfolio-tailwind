@@ -1,4 +1,4 @@
-function sendMail() {
+export function sendMail() {
     if (document.getElementById("name1").value.length > 0 &&
         document.getElementById("email").value.length > 0 &&
         document.getElementById("message").value.length > 0
@@ -32,6 +32,6 @@ function sendMail() {
     else if(document.getElementById("message").value.length == 0){
         alert("Message cant be empty");
     }
-    
 }
+
 
