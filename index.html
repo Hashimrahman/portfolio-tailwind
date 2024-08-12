@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hashim</title>
   <link rel="stylesheet" href="style.css">
+  
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-  
+
   <script type="module">
     import { sendMail } from './index.js';
     document.getElementById('send-mail').onclick = sendMail;
@@ -24,31 +25,55 @@
     })();
 
   </script>
+  <script type="module">
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      let currentSection = '';
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+
 </head>
 
-<body>
+<body class="bg-cover bg-fixed bg-no-repeat">
   <div class="">
     <!-- ============================================================= NAVBAR =========================================================== -->
 
     <div class="navbar-outer sticky top-8 flex justify-center z-20 ">
       <div
         class="navbar flex flex-col items-center text-white h-auto p-4 w-auto md:flex-row md:justify-between md:items-center border-4 border-solid md:w-[90%] md:h-[60px]">
-        <div class="nav-logo w-[25%] flex items-center justify-center ">
-          <a href="#home"><img class="h-[15%] w-[15%]" src="./images/logo.png" alt=""></a>
+        <div class="nav-logo  w-[95%] md:w-[30%] flex items-center justify-between md:justify-center  ">
+          <a href="#home"><img class="h-auto md:h-[15%] w-[20%] md:w-[15%]" src="./images/logo.png" alt=""></a>
           <span class="hamburger md:hidden" onclick="toggleMenu()">☰</span>
         </div>
         <div class="nav-items w-[40%] flex justify-evenly items-center" id="navItems">
-          <a class="no-underline text-white transform hover:-translate-y-1 duration-200" href="#about">About</a>
-          <a class="no-underline text-white transform hover:-translate-y-1 duration-200" href="#projects">Projects</a>
-          <a class="no-underline text-white transform hover:-translate-y-1 duration-200" href="#skills">Skills</a>
-          <a class="no-underline text-white transform hover:-translate-y-1 duration-200" href="#contact">Contact Me</a>
+          <a class="nav-link no-underline text-white transform hover:-translate-y-1 duration-200"
+            href="#about">About</a>
+          <a class="nav-link no-underline text-white transform hover:-translate-y-1 duration-200"
+            href="#projects">Projects</a>
+          <a class="nav-link no-underline text-white transform hover:-translate-y-1 duration-200"
+            href="#skills">Skills</a>
+          <a class="nav-link no-underline text-white transform hover:-translate-y-1 duration-200"
+            href="#contact">Contact Me</a>
         </div>
         <div class="nav-icons flex justify-around w-[20%] text-2xl no-underline">
-          <!-- <a href="https://github.com/Hashimrahman" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.instagram.com/__hashim_.rhmn._/" target="_blank"><i
-                            class='bx bxl-instagram'></i></a>
-                    <a href="https://www.linkedin.com/in/hashim-rahman-870b24211/" target="_blank"><i
-                            class='bx bxl-linkedin'></i></a> -->
           <a href="https://docs.google.com/document/d/1Rwot6RQfZfbWVWsBlSxjuPR93hOuMQ7OmTIUmqOdW9g/export?format=pdf"
             download="hashim.pdf"><button
               class="buttonnew w-40 h-8 bg-[#ff7f50] text-[#f8f8f8] text-sm rounded-3xl">Download
@@ -70,7 +95,7 @@
 
     <!-- ============================================================= HOME SECTION =========================================================== -->
 
-    <div class="home flex flex-col items-center" id="home">
+    <section class="home flex flex-col items-center" id="home">
       <div class="home-inner w-[100%] h-[90vh] flex justify-around bg-black flex-wrap">
         <div class="home-text text-white w-[50%] flex flex-col justify-center ml-16">
           <h3>Hi, I'm Hashim</h3>
@@ -97,47 +122,53 @@
             class='bx bxl-linkedin'></i>
         </a>
       </div>
-    </div>
+    </section>
 
     <!-- ========================================================= ABOUT SECTION =============================================================== -->
 
-    <div class="about flex justify-around bg-[#2a2a2a] h-[80vh]" id="about">
-      <div class="about-image w-[40%] flex items-center ml-[2rem]">
-        <img class="w-[80%]" src="./images/about-final.png" alt="">
-      </div>
-      <div class="about-text w-[50%] flex flex-col justify-center mr-[2rem] text-justify text-[#8a8a8a] leading-loose">
-        <h2 class="text-2xl leading-[1.2]">About Me</h2>
-        <div class="line w-12 h-[0.2rem] bg-[#00ffff]"></div>
-        <p>Highly motivated BTech graduate with a strong passion for web development. I leverage <span
-            class="about-span1 text-[##60EFFF] font-extrabold">React.js</span> and <span
-            class="about-span2 text-[#de8787] font-extrabold">Tailwind CSS</span> to craft
-          user-centric and visually appealing web experiences. Currently expanding my skillset by exploring
-          the world of backend development with a keen interest in Python's <span
-            class="about-span1 text-[##60EFFF] font-extrabold">Django</span> framework. Eager to contribute
-          to innovative projects and
-          collaborate with talented developers.</p>
+    <section class="about flex justify-around h-[80vh] bg-cover bg-fixed bg-no-repeat scroll-m-8" id="about">
+      <div class=" about-content flex justify-around m-8 bg-[#2a2a2a] flex-wrap rounded-lg">
+        <div class="about-image w-[40%] flex items-center ml-[2rem]">
+          <img class="w-[80%]" src="./images/about-final.png" alt="">
+        </div>
+        <div
+          class="about-text w-[50%] flex flex-col justify-center mr-[2rem] text-justify text-[#8a8a8a] leading-loose ">
+          <div class="h-auto  flex flex-col justify-center text-justify px-6 py-0 sm:py-16 rounded-lg">
+            <h2 class="text-2xl leading-[1.2]">About Me</h2>
+            <div class="line w-12 h-[0.2rem] bg-aqua mb-4 animate-Line1"></div>
+            <p>Highly motivated BTech graduate with a strong passion for web development. I leverage <span
+                class="about-span1 text-[##60EFFF] font-extrabold">React.js</span> and <span
+                class="about-span2 text-[#de8787] font-extrabold">Tailwind CSS</span> to craft
+              user-centric and visually appealing web experiences. Currently expanding my skillset by exploring
+              the world of backend development with a keen interest in Python's <span
+                class="about-span1 text-[##60EFFF] font-extrabold">Django</span> framework. Eager to contribute
+              to innovative projects and
+              collaborate with talented developers.</p>
+          </div>
+        </div>
       </div>
 
-    </div>
+    </section>
 
     <!-- =============================================================== PROJECT SECTION ========================================================= -->
 
 
 
-    <div class="projects flex flex-col items-center pt-8 pb-8 bg-black text-center text-white" id="projects">
+    <section class="projects flex flex-col items-center pt-8 pb-8 bg-black text-center text-white scroll-m-16"
+      id="projects">
       <h2 class="text-3xl">Deployment Zone</h2>
-      <div class="line3 w-28 h-[0.2rem] bg-[#00ffff] mb-8"></div>
+      <div class="line3 w-28 h-[0.2rem] bg-aqua mb-8 animate-Line2"></div>
       <div class="project-card w-[100%] flex flex-col justify-evenly">
         <div class="project-card-row1 flex flex-wrap justify-evenly">
           <a href="https://karmakmct.com/" class="flex justify-center">
-            <div class="card w-80 h-[25rem] p-[5px] rounded-2xl">
+            <div class="card w-auto h-[25rem] p-[5px] rounded-2xl">
               <div
                 class="card-info bg-[#181818] text-[#181818] flex flex-col items-center w-[100%] h-[100%] rounded-xl overflow-hidden">
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2 mt-1 ">
                   <img class="w-[95%] rounded mt-8 sm:mt-0" src="./images/karma24.png" alt="">
                 </div>
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
-                  <h2 class="text-3xl text-[#00ff87] mb-8">KARMA 24</h2>
+                  <h2 class="text-3xl text-[#00ff87] mb-8 pt-16 md:pt-0">KARMA 24</h2>
                   <p>Official Website of The annual national level <span class="project-span2">Tech Fest
                       (2024)</span> of KMCT College of Engineering.</p>
                 </div>
@@ -152,7 +183,7 @@
                   <img class="w-[95%] rounded mt-8 sm:mt-0" src="./images/laetus.png" alt="">
                 </div>
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
-                  <h2 class="text-3xl text-[#00ff87] mb-8">LAETUS CREATIONS</h2>
+                  <h2 class="text-3xl text-[#00ff87] mb-8 pt-16 md:pt-0">LAETUS CREATIONS</h2>
                   <p>Official Website of <span class="project-span2">Leatus Creations</span></p>
                 </div>
               </div>
@@ -166,7 +197,7 @@
                   <img class="w-[95%] rounded mt-8 sm:mt-0" src="./images/karma23.png" alt="">
                 </div>
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
-                  <h2 class="text-3xl text-[#00ff87] mb-8">KARMA 23</h2>
+                  <h2 class="text-3xl text-[#00ff87] mb-8 pt-16 md:pt-0">KARMA 23</h2>
                   <p>Official Website of The annual national level <span class="project-span2">Tech Fest
                       (2023)</span> of KMCT College of Engineering.</p>
                 </div>
@@ -181,7 +212,8 @@
                   <img class="w-[95%] rounded mt-8 sm:mt-0" src="./images/bridgeon.png" alt="">
                 </div>
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
-                  <h2 class="text-3xl text-[#00ff87] mb-8">BRIDGEON <span class="project-span1 text-base">(Clone)</span>
+                  <h2 class="text-3xl text-[#00ff87] mb-8 pt-16 md:pt-0">BRIDGEON <span
+                      class="project-span1 text-base">(Clone)</span>
                   </h2>
                   <p>UI Clone of Official website of <span class="project-span2">Bridgeon Solutions</span>
                   </p>
@@ -197,7 +229,8 @@
                   <img class="w-[95%] rounded mt-8 sm:mt-0" src="./images/airbnb.png" alt="">
                 </div>
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
-                  <h2 class="text-3xl text-[#00ff87] mb-8">AIRBNB <span class="project-span1 text-base">(Clone)</span>
+                  <h2 class="text-3xl text-[#00ff87] mb-8 pt-16 md:pt-0">AIRBNB <span
+                      class="project-span1 text-base">(Clone)</span>
                   </h2>
                   <p>UI Clone of Official website of <span class="project-span2">Airbnb</span>
                   </p>
@@ -213,7 +246,8 @@
                   <img class="w-[95%] rounded mt-8 sm:mt-0" src="./images/stylit.png" alt="">
                 </div>
                 <div class="card-info-inner h-[50%] flex flex-col items-center justify-center text-justify p-2">
-                  <h2 class="text-3xl text-[#00ff87] mb-8">STYLIT <span class="project-span1 text-base">(Ongoing)</span>
+                  <h2 class="text-3xl text-[#00ff87] mb-8 pt-16">STYLIT <span
+                      class="project-span1 text-base">(Ongoing)</span>
                   </h2>
                   <p>Complte E-Commerce website for the clothing brand <span class="project-span2">Stylit</span></p>
                 </div>
@@ -222,86 +256,99 @@
           </a>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- =================================================================== SKILLS SECTION ===================================================== -->
 
     <!-- ================================================================= SKILLS - UPDATED SECTION ======================================================= -->
 
 
-    <div class="skills" id="skills">
-      <div class="skill-heading">
-        <h2>What I'm Excelled At<h2>
-            <div class="line2"></div>
+    <section class="skills w-full flex flex-col pt-8 pb-16 text-center bg-[#2a2a2a] scroll-m-32" id="skills">
+      <div class="skill-heading flex flex-col items-center mb-8">
+        <h2 class="text-3xl text-[#9b9b9b]">What I'm Excelled At<h2>
+        <div class="line2 w-48 h-1  m-0 bg-aqua animate-Line3"></div>
       </div>
-      <div class="skill-grid">
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
+      <div class="skill-grid flex justify-evenly items-center gap-y-8 flex-wrap w-full flex-1 overflow-hidden">
+        <div
+          class="skill-grid-inner w-fit h-40 bg-white rounded-lg mt-0 mr-2 mb-8 ml-2 flex justify-around items-center transition-all duration-500 p-8">
+          <div class="skill-logo flex text-7xl text-center">
             <i class='bx bxl-html5'></i>
           </div>
         </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
+        <div
+          class="skill-grid-inner w-fit h-40 bg-white rounded-lg mt-0 mr-2 mb-8 ml-2 flex justify-around items-center transition-all duration-500 p-8">
+          <div class="skill-logo flex text-7xl text-center">
             <i class='bx bxl-tailwind-css'></i>
           </div>
         </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
+        <div
+          class="skill-grid-inner w-fit h-40 bg-white rounded-lg mt-0 mr-2 mb-8 ml-2 flex justify-around items-center transition-all duration-500 p-8">
+          <div class="skill-logo flex text-7xl text-center">
             <i class='bx bxl-python'></i>
           </div>
         </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
+        <div
+          class="skill-grid-inner w-fit h-40 bg-white rounded-lg mt-0 mr-2 mb-8 ml-2 flex justify-around items-center transition-all duration-500 p-8">
+          <div class="skill-logo flex text-7xl text-center">
             <i class='bx bxl-javascript'></i>
           </div>
         </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
+        <div
+          class="skill-grid-inner w-fit h-40 bg-white rounded-lg mt-0 mr-2 mb-8 ml-2 flex justify-around items-center transition-all duration-500 p-8">
+          <div class="skill-logo flex text-7xl text-center">
             <i class='bx bxl-git'></i>
           </div>
         </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
+        <div
+          class="skill-grid-inner w-fit h-40 bg-white rounded-lg mt-0 mr-2 mb-8 ml-2 flex justify-around items-center transition-all duration-500 p-8">
+          <div class="skill-logo flex text-7xl text-center">
             <i class='bx bxl-bootstrap'></i>
           </div>
         </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
+        <div
+          class="skill-grid-inner w-fit h-40 bg-white rounded-lg mt-0 mr-2 mb-8 ml-2 flex justify-around items-center transition-all duration-500 p-8">
+          <div class="skill-logo flex text-7xl text-center">
             <i class='bx bxl-css3'></i>
           </div>
         </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
+        <div
+          class="skill-grid-inner w-fit h-40 bg-white rounded-lg mt-0 mr-2 mb-8 ml-2 flex justify-around items-center transition-all duration-500 p-8">
+          <div class="skill-logo flex text-7xl text-center">
             <i class='bx bxl-figma'></i>
           </div>
         </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
+        <div
+          class="skill-grid-inner w-fit h-40 bg-white rounded-lg mt-0 mr-2 mb-8 ml-2 flex justify-around items-center transition-all duration-500 p-8">
+          <div class="skill-logo flex text-7xl text-center">
             <i class='bx bxl-firebase'></i>
           </div>
         </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
+        <div
+          class="skill-grid-inner w-fit h-40 bg-white rounded-lg mt-0 mr-2 mb-8 ml-2 flex justify-around items-center transition-all duration-500 p-8">
+          <div class="skill-logo flex text-7xl text-center">
             <i class='bx bxl-postgresql'></i>
           </div>
         </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
+        <div
+          class="skill-grid-inner w-fit h-40 bg-white rounded-lg mt-0 mr-2 mb-8 ml-2 flex justify-around items-center transition-all duration-500 p-8">
+          <div class="skill-logo flex text-7xl text-center">
             <i class='bx bxl-django'></i>
           </div>
         </div>
-        <div class="skill-grid-inner">
-          <div class="skill-logo">
+        <div
+          class="skill-grid-inner w-fit h-40 bg-white rounded-lg mt-0 mr-2 mb-8 ml-2 flex justify-around items-center transition-all duration-500 p-8">
+          <div class="skill-logo flex text-7xl text-center">
             <i class='bx bxl-react'></i>
           </div>
         </div>
       </div>
-    </div>
+  </div>
 
-    <!-- ================================================================= CONTACT SECTION ======================================================= -->
+  <!-- ================================================================= CONTACT SECTION ======================================================= -->
 
-    <div class="contact w-[100%] h-[80vh] flex justify-around text-white pt-8 mb-8" id="contact">
-      <div class="contact-motion w-[40%] h-[100%] flex justify-center items-center">
+  <section class="contact w-[100%] h-auto flex justify-around text-white pt-8 pb-8 scroll-m-32" id="contact">
+    <div class="contact-inner  flex justify-around  w-full mx-8 bg-black relative rounded-lg pl-1 sm:pl-0">
+      <div class="contact-motion w-[40%] h-[100%] hidden lg:flex justify-center items-center">
         <div class="loader flex flex-wrap">
           <div class="cell d-0"></div>
           <div class="cell d-1"></div>
@@ -314,43 +361,63 @@
           <div class="cell d-4"></div>
         </div>
       </div>
-      <div class="contact-form w-1/2 h-full flex flex-col items-start pt-8">
+      <div class="contact-form w-auto lg:w-1/2 h-auto text-left flex flex-col items-start pt-8">
         <h2 class="my-8 ml-4 text-5xl">Let's Talk</h2>
-        <div class="form">
+        <div class="form flex flex-col justify-center items-center text-black text-sm">
           <form action="">
-            <input class="form-1 w-full h-14 rounded-xl bg-white m-2 border-none pl-4" type="text" placeholder="Name"
-              id="name1">
-            <input class="form-1 w-full h-14 rounded-xl bg-white m-2 border-none pl-4" type="email" placeholder="Email"
-              id="email">
+            <input class="form-1 w-[90%] sm:w-full h-14 rounded-xl bg-white m-1 sm:m-2 border-none pl-4" type="text"
+              placeholder="Name" id="name1">
+            <input class="form-1 w-[90%] sm:w-full h-14 rounded-xl bg-white m-1 sm:m-2 border-none pl-4" type="email"
+              placeholder="Email" id="email">
             <textarea
-              class="form-message w-full h-40 rounded-xl bg-white m-2 text-start border-none pl-4 resize-none leading-[9rem]"
+              class="form-message w-[90%] sm:w-full h-40 rounded-xl bg-white m-1 sm:m-2 text-start border-none pl-4 resize-none leading-[9rem]"
               type="text" placeholder="Message" id="message"></textarea>
-
-
           </form>
-          <button class="w-3/5 h-10 p-2 bg-[#00ffff] m-2 rounded-lg border-none text-base mt-4" id="send-mail">Send email</button>
+          <button class="w-3/5 p-2 bg-[#00ffff] m-2 rounded-lg border-none text-base " id="send-mail">Send
+            email
+          </button>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- ================================================================ FOOTER SECTION ======================================================== -->
+  <!-- <section class="h-[400px] w-full bg-slate-500 my-16 p-5">
+    <div class="h-auto w-1/2 bg-black m-6 text-white">
+      <div class="h-full w-[90%] bg-red-500 text-right"> 90%</div>
+    </div>
+  </section> -->
 
-    <div class="footer bg-white h-[5vh] flex flex-col items-center justify-center text-black text-sm">
-      <p><i class='bx bx-copyright'></i> All Rights Reserved</p>
+  <!-- ================================================================ FOOTER SECTION ======================================================== -->
+
+  <div class="footer bg-white h-[5vh] flex  items-center justify-center text-black text-xl sm:text-3xl py-6">
+    <!-- <p><i class='bx bx-copyright'></i> All Rights Reserved</p> -->
+    <div class="flex justify-evenly w-1/4 ">
+      <a href="https://www.instagram.com/__hashim_.rhmn._/" target="_blank"><i
+          class="bx bxl-instagram-alt hover:text-[#c172ff] hover:cursor-pointer duration-300"></i></a>
+      <a href="https://www.linkedin.com/in/hashim-rahman-870b24211/" target="_blank"><i
+          class="bx bxl-linkedin hover:text-[#c172ff] hover:cursor-pointer duration-300"></i></a>
+      <a href="https://github.com/Hashimrahman" target="_blank"><i
+          class="bx bxl-github hover:text-[#c172ff] hover:cursor-pointer duration-300"></i></a>
+      <a href="mailto:hashimrhmnp@gmail.com" target="_blank"><i
+          class="bx bxl-gmail hover:text-[#c172ff] hover:cursor-pointer duration-300"></i></a>
+
     </div>
 
-    <!-- ================================================================= BACK TO TOP ======================================================= -->
+  </div>
 
-    <button
-      onclick="window.open('https://wa.me/919072827658?text=Hello%2C%20I%20am%20interested%20in%20your%20services.', '_blank')"
-      class="whatsApp-button fixed right-4 bottom-16 text-5xl bg-none text-[#17fba2] border-none cursor-pointer z-20" >
-      <i class='bx bxl-whatsapp back'></i>
-    </button>
-    <button onclick="window.location='#home'"
-      class="scroll-up-button fixed right-4 bottom-4 text-5xl bg-none text-[#17fba2] border-none cursor-pointer z-20"><i
-        class='bx bx-chevron-up-circle back'></i>
-    </button>
+  <!-- ================================================================= BACK TO TOP ======================================================= -->
+
+  <button
+    onclick="window.open('https://wa.me/919072827658?text=Hello%2C%20I%20am%20interested%20in%20your%20services.', '_blank')"
+    class="whatsApp-button fixed right-4 bottom-16 text-5xl bg-none text-[#17fba2] border-none cursor-pointer z-20">
+    <i class='bx bxl-whatsapp back'></i>
+  </button>
+  <button onclick="window.location='#home'"
+    class="scroll-up-button fixed right-4 bottom-4 text-5xl bg-none text-[#17fba2] border-none cursor-pointer z-20"><i
+      class='bx bx-chevron-up-circle back'></i>
+  </button>
   </div>
   <script type="module" src="./main.js"></script>
 </body>
+
 </html>
